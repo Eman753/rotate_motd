@@ -1,0 +1,8 @@
+[Unit]
+Description=Service de changement de motd
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/rotate_motd.sh start
+ExecStop=/usr/local/bin/rotate_motd.sh stop
+Restart=on-failure

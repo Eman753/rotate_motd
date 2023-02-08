@@ -1,0 +1,9 @@
+[Unit]
+Description=Minuteur pour rotate_motd.sh
+
+[Timer]
+OnCalendar=*-*-* 00:00:00
+Unit=rotate_motd.service
+
+[Install]
+WantedBy=timers.target
